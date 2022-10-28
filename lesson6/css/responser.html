@@ -1,0 +1,57 @@
+<div class="flex-box flex-wrap .flex-h-center">
+    <div class="elem">
+    
+    </div>
+    <div class="elem">
+    
+    </div>
+    <div class="elem">
+    
+    </div>
+</div>
+
+<style>
+    .flex-box{
+        display: flex;
+    }
+
+    .flex-wrap{
+        flex-wrap: wrap;
+
+    }
+
+    .flex-h-center{
+        justify-content: center;
+    }
+    .elem{
+        width: 33.33%;
+        height: 100px;
+        background-color: yellow;
+        border: 3px dashed blue;
+        min-width: 200px;
+        box-sizing: border-box;
+    }
+    /* стили которые вступают в ход при размере экрана <=500px*/ 
+    @media(max-width: 500px) {
+        .elem {
+            background-color: red;
+        }
+        body {
+            background-color:palevioletred;
+        }
+
+        .elem:nth-child(3) {
+            display: none;
+        }
+
+         /* стили которые вступают в ход при размере экрана <=300px*/ 
+    @media(max-width: 300px) {
+        .elem {
+            background-color: pink;
+        }
+
+        .elem:nth-child(2) {
+            display: none;
+        }
+    }
+</style>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Демо Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 class="justify-center">Онлайн-курс по популярным прическам</h1>
+    <div class="menu">
+        <a href="#div1" type="button" class="btn btn-outline-dark flex-centr">О курсе</a>
+        <a href="#div2" type="button" class="btn btn-outline-dark flex-centr">Преподаватель</a>
+        <a href="#div3" type="button" class="btn btn-outline-dark flex-centr">Программа и тариф</a>
+        <a href="#div4" type="button" class="btn btn-outline-dark flex-centr">Вопрос-ответ</a>
+        <a href="#div5" type="button" class="btn btn-outline-dark flex-centr">Контакты</a>
+    </div>
+    <div id="div1">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://mykaleidoscope.ru/uploads/posts/2021-10/1634197417_24-mykaleidoscope-ru-p-okrashivanie-volos-blond-krasivaya-priches-25.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://tabulo.ru/wp-content/uploads/2021/06/averie-woodard-4nulm-JUYFo-unsplash.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://forbeauty.ru/wp-content/uploads/2017/07/modnye-ottenki-volos-2018-15.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div id="div2" class="page-block justify-center">
+        <div class="t-section__topwrapper t-align_center  t-descr_xl t-descr_width_560"><div class="t-section__title t-title t-title_xs" data-animate-style="zoomin" data-animate-group="yes" field="btitle" data-animate-start-time="1666364144669"><div style="color:#cd9457;" data-customstyle="yes">О курсе</div></div><div class="t-section__descr t-descr t-descr_xl t-margin_auto" field="bdescr"><div style="color:#0a0a0a;" data-customstyle="yes">Онлайн-курс "Локоны и волны" – это объемный<br>дистанционный курс по работе с волосами по созданию самых актуальных и модных укладок.<br><br>Курс научит вас не бояться работать с волосами, находить подход к любым типам волос, разбираться в стайлинге и инструментах.</div></div></div>
+    </div>
+    <div id="div3" class="page-block">блок 3</div>
+    <div id="div4" class="page-block">блок 4</div>
+    <div id="div5" class="page-block">блок 5</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+<style>
+    .justify-center{
+        justify-content: center;
+        display: flex;
+    }
+
+    .menu{
+        justify-content: center;
+        display: flex;
+        padding: 20px 0;
+        
+        background-color: #eac8c7;
+    }
+
+    .menu .btn{
+        margin: 0 20px; 
+        color: #fff;
+    border-color: #fff;
+    }
+    .page-block{
+        padding: 20px 30px;
+    }
+
+    .t-descr_xl {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .t-descr_width_560{
+        max-width: 560px;
+    }
+</style>
